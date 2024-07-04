@@ -1,0 +1,24 @@
+RewriteEngine On
+
+RewriteRule ^beranda$ index.php?halaman=beranda [L]
+
+RewriteRule ^input-pegawai$ index.php?halaman=input-pegawai [L]
+RewriteRule ^data-pegawai$ index.php?halaman=data-pegawai [L]
+RewriteRule ^detail-pegawai/([^/]+)$ index.php?halaman=detail-pegawai&n=$1 [L]
+
+RewriteRule ^input-gaji$ index.php?halaman=input-gaji [L]
+RewriteRule ^data-gaji$ index.php?halaman=data-gaji [L]
+RewriteRule ^detail-transaksi-gaji/([^/]+)$ index.php?halaman=detail-transaksi-gaji&kode=$1 [L]
+RewriteRule ^transaksi-gaji/([^/]+)$ index.php?halaman=transaksi-gaji&kode=$1 [L]
+RewriteRule ^detail-gaji/([^/]+)$ index.php?halaman=detail-gaji&kode=$1 [L]
+RewriteRule ^ubah-gaji/([^/]+)$ index.php?halaman=ubah-gaji&kode=$1 [L]
+
+RewriteRule ^absensi$ index.php?halaman=absensi [L]
+
+RewriteRule ^login$ login.php [NC,L]
+
+RewriteRule ^profil$ index.php?halaman=profil [L]
+
+RewriteRule ^profil/([^/]+)$ index.php?halaman=profil&pesan=$1 [L]
+
+php_value max_input_vars 3000

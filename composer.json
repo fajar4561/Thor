@@ -1,0 +1,16 @@
+{
+    "name": "fajar4561/app",
+    "description": "aplikasi gaji",
+    "autoload": {
+        "psr-4": {
+            "Fajar4561\\App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thoreck",
+            "email": "maulanafajar751@gmail.com"
+        }
+    ],
+    "require": {}
+}
